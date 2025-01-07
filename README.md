@@ -25,6 +25,6 @@ Before you begin, ensure you have the following installed:
 
 ### Running the App:
 
-    npx react native start
+    npx react-native start
     a (for android)
     i (for ios)
