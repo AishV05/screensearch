@@ -26,6 +26,7 @@ const SearchScreen = () => {
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <View style={styles.hashtagItem}>
+              <Image source={{ uri: 'https://picsum.photos/300/300' }} style={styles.hashtagImage} />
               <Text style={styles.hashtagText}>{item.hashtag}</Text>
             </View>
           )}
@@ -112,12 +113,20 @@ const styles = StyleSheet.create({
   },
   hashtagItem: {
     backgroundColor: '#e0e0e0',
-    borderRadius: 16,
+    borderRadius: 8,
     padding: 10,
     marginRight: 8,
+    alignItems: 'center',
+  },
+  hashtagImage: {
+    width: 50,
+    height: 50,
+    borderRadius: 8,
+    marginBottom: 4,
   },
   hashtagText: {
     fontSize: 14,
+    textAlign: 'center',
   },
   communityItem: {
     marginRight: 16,
